@@ -2,7 +2,8 @@ HTML = """
 I still believe in your eyes
 I just don’t care what you’ve done in your life
 Baby, I’ll always be here by your side
-Don’t leave me waiting too long, please come byAnd I’ll fly with you
+Don’t leave me waiting too long, please come byAnd
+I’ll fly with you
 I’ll fly with you
 I’ll fly with you
 """
