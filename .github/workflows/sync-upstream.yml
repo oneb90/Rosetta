@@ -3,7 +3,7 @@ name: Sync upstream repository
 on:
   schedule:
     - cron: "0 3 * * 4"   # ogni giovedì alle 03:00
-  workflow_dispatch:      # avvio manuale da GitHub
+  workflow_dispatch:
 
 jobs:
   sync:
