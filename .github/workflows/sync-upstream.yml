@@ -1,0 +1,19 @@
+name: Sync upstream repository
+
+on:
+  schedule:
+    - cron: "0 3 * * 4"   # ogni giovedì alle 03:00
+  workflow_dispatch:      # avvio manuale da GitHub
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync fork with upstream
+        uses: repo-sync/github-sync@v2
+        with:
+          source_repo: https://github.com/UrloMythus/MammaMia.git
+          source_branch: main
+          destination_branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
